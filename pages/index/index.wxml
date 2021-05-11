@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<!-- <view class="container"> -->
+  <!-- <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}" calss="userinfo-opendata">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+  <swiper autoplay interval="2000" circular indicator-dots indicator-color="#0094ff" indicator-active-color="#ff0094">
+<swiper-item><image mode="widthFix" class="swiperImg" src="https://ftp.bmp.ovh/imgs/2021/05/a16878038b1de771.jpg"/></swiper-item>
+<swiper-item><image mode="widthFix"  class="swiperImg" src="https://ftp.bmp.ovh/imgs/2021/05/85b3fab6021e5ecb.png"/></swiper-item>
+<swiper-item><image mode="widthFix"  class="swiperImg" src="https://ftp.bmp.ovh/imgs/2021/05/2b49a45c5bae6ec2.png"/></swiper-item>   
+</swiper>
+<image class="indexImg" mode="widthFix" src="https://ftp.bmp.ovh/imgs/2021/05/d31a4fdf4f5c4672.jpg"/> 
+<!-- </view> -->

@@ -1,0 +1,26 @@
+<view class="page-body">
+    <map
+      id="myMap"
+      style="width: 100%; height: 300px;"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      bindmarkertap="markertap"
+      bindcallouttap="callouttap"
+      bindlabeltap="labeltap"
+      markers="{{markers}}"
+      scale="16"
+    >
+      <cover-view slot="callout">
+        <block wx:for="{{customCalloutMarkerIds}}" wx:key="*this">
+          <cover-view  class="customCallout" marker-id="{{item}}" >
+            <cover-image class="icon" src="/image/voice.png"></cover-image>
+            <cover-view class="content"> 
+              {{num}}-{{item}}-{{index}}
+            </cover-view>
+          </cover-view>
+        </block>
+      </cover-view>
+    </map>
+<button open-type="share" type="primary" plain>分享给朋友</button>
+<button open-type="contact" type="primary" plain>联系他</button>
+</view>

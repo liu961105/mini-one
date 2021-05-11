@@ -1,0 +1,6 @@
+<Tabs tabs="{{tabs}}" binditemChange="handleItemChange">
+<block wx:if="{{tabs[0].isActive}}">首页插槽</block>
+ <block wx:elif="{{tabs[1].isActive}}">原创插槽</block>
+ <block wx:elif="{{tabs[2].isActive}}">分类插槽</block>
+ <block wx:else>关于插槽</block>
+</Tabs>
